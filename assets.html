@@ -9,83 +9,81 @@
     <script src="main.js"></script>
   </head>
   <body>
-  
-    <!-- Menu Button -->
-    <div class="header-container">
-      <div class="menu-container" onclick="menuClick(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <div id="menuDrop" class="menu-content">
-          <a href="index.html">home</a>
-          <a href="work.html">projects</a>
-          <a href="assets.html">assets</a>
-          <br>
-          <br>
-          <br>
-        </div>
+     <!-- STICKY HEADER: -->
+    <div class="sticky-header">
+      <!-- UPPER NAVIGATION: ASSETS & ABOUT PAGES -->
+      <div class="upper-nav">
+        <a href="index.html">FEATURED PROJECTS</a>
+        <a href="about.html">ABOUT</a>
       </div>
-      <a class = name-to-home href="index.html">
-          <p class = "p-name"> KRISTIN &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp WU</p>
-      </a>
+      <!-- KRISTINWU@UCHICAGO.EDU -->
+      <div class="name-banner">KRISTINWU@UCHICAGO.EDU</div>
+      <!-- MODES: IMG\TXT -->
+      <div class="project-nav">
+        <div class="project-nav-first"> ASSETS (13) </div>
+        3D SCANS && 360° ENVIRONMENT TEXTURES
+      </div>
+      <div class="item-desc-header">
+        <div class="project-col-gen"> ITEM </div>
+        <div class="project-col-gen"> LOCATION </div>
+      </div>
     </div>
-
     <!-- 3D Assets -->
-    <p class = "work-txt"> CLICK TO DOWNLOAD ASSETS</p> 
-    <br>
-    <div class = "project-container">
-      <!-- Graffiti Wall 1 -->
-      <a href="https://www.dropbox.com/sh/pajsu13qqysmgcp/AABP_oJSEqjn6DJKysEpiETXa?dl=0" target="_blank">
-        <div class = "work-link">
-          <img class="work-img-link" src="imgs/assets/graffiti_wall1.jpg" alt="Graffiti Wall thumbnail"/>
-          <p class = "work-txt"> GRAFFITI WALL</p> 
-          <p class = "work-subtxt"> Berlin, Germany </p> 
-        </div>
-      </a>
+    <div class = "project-grid">
+      <div class = "grid-item">
+        <!-- Graffiti Wall 1 -->
+        <a href="https://www.dropbox.com/sh/pajsu13qqysmgcp/AABP_oJSEqjn6DJKysEpiETXa?dl=0" target="_blank">
+          <img src="imgs/assets/graffiti_wall1.jpg" alt="Graffiti Wall thumbnail"/>
+          <div class="item-desc">
+            <div class = "project-col"> GRAFFITI WALL</div> 
+            <div class = "project-col">  BERLIN, GERMANY </div> 
+          </div>
+        </a>
       <!-- Street Post -->
-      <a href="https://www.dropbox.com/sh/aexgchmyaci5gyq/AABFSWVriz-iNNGnJWDpp43Ka?dl=0" target="_blank">
-        <div class = "work-link">
-            <img class="work-img-link" src="imgs/assets/street_post.jpg" alt="Street Post thumbnail"/>
-            <p class = "work-txt"> STREET POST </p> 
-            <p class = "work-subtxt"> Berlin, Germany </p> 
-        </div>
-      </a>
-      <!-- Graffiti Stairs -->
-      <a href="https://www.dropbox.com/sh/8dxtzrhzdra4xii/AABut7U1sG_tR-jYXLgQyynRa?dl=0" target="_blank">
-        <div class = "work-link">
-          <img class="work-img-link" src="imgs/assets/graffiti_stairs.jpg" alt="Graffiti Stairs thumbnail"/>
-          <p class = "work-txt"> GRAFFITI STAIRS </p> 
-          <p class = "work-subtxt"> Istanbul (Karaköy), Türkiye </p> 
-        </div>
-      </a>
-    </div>
+        <a href="https://www.dropbox.com/sh/aexgchmyaci5gyq/AABFSWVriz-iNNGnJWDpp43Ka?dl=0" target="_blank">
+          <img src="imgs/assets/street_post.jpg" alt="Street Post thumbnail"/>
+          <div class="item-desc">
+            <div class = "project-col"> STREET POST</div> 
+            <div class = "project-col"> BERLIN, GERMANY </div> 
+          </div>
+        </a>
+        <!-- Graffiti Stairs -->
+        <a href="https://www.dropbox.com/sh/8dxtzrhzdra4xii/AABut7U1sG_tR-jYXLgQyynRa?dl=0" target="_blank">
+          <img src="imgs/assets/graffiti_stairs.jpg" alt="Graffiti Stairs thumbnail"/>
+          <div class="item-desc">
+            <div class = "project-col"> GRAFFITI STAIRS</div> 
+            <div class = "project-col"> ISTANBUL (KARAKÖU), TÜRKIYE </div> 
+          </div>
+        </a>
+      </div>
 
     <!-- 3D Assets, Row2 -->
-    <div class = "project-container">
-      <!-- Classical Bust -->
-      <a href="https://www.dropbox.com/sh/1kb0by8pm3z5u56/AACZwRuEMSNBQSn4g_TGi2iTa?dl=0" target="_blank">
-        <div class = "work-link">
-          <img class="work-img-link" src="imgs/assets/perge_bust.JPG" alt="Classical Bust thumbnail"/>
-          <p class = "work-txt"> CLASSICAL BUST</p> 
-          <p class = "work-subtxt"> Çanakkale (Troy), Türkiye </p> 
-        </div>
-      </a>
-      <!-- Perge Ruins -->
-      <a href="https://www.dropbox.com/sh/ihmz0n76yhevglo/AAA8uQYkyoZdtEd2Y97FV2gxa?dl=0" target="_blank">
-        <div class = "work-link">
-            <img class="work-img-link" src="imgs/assets/perge_ruins.JPG" alt="Ancient City Ruins thumbnail"/>
-            <p class = "work-txt"> ANCIENT CITY RUINS FRAGMENT </p> 
-            <p class = "work-subtxt"> Antalya (Perge), Türkiye </p> 
-        </div>
-      </a>
-      <!-- Spice Stand -->
-      <a href="https://www.dropbox.com/sh/dgoxttprtmbcpwx/AAAZTLCMw1WbaLhs9EsXp7RJa?dl=0" target="_blank">
-        <div class = "work-link">
-          <img class="work-img-link" src="imgs/assets/spice_stand.JPG" alt="Spice Stand thumbnail"/>
-          <p class = "work-txt"> SPICE STAND </p> 
-          <p class = "work-subtxt"> Istanbul (Grand Bazaar), Türkiye</p> 
-        </div>
-      </a>
+      <div class="grid-item">
+        <!-- Classical Bust -->
+        <a href="https://www.dropbox.com/sh/1kb0by8pm3z5u56/AACZwRuEMSNBQSn4g_TGi2iTa?dl=0" target="_blank">
+          <img src="imgs/assets/perge_bust.jpg" alt="Classical Bust thumbnail"/>
+          <div class="item-desc">
+            <div class = "project-col"> CLASSICAL BUST </div> 
+            <div class = "project-col"> ÇANNAKKALE (TROY), TÜRKIYE </div> 
+          </div>
+        </a>
+        <!-- Perge Ruins -->
+        <a href="https://www.dropbox.com/sh/ihmz0n76yhevglo/AAA8uQYkyoZdtEd2Y97FV2gxa?dl=0" target="_blank">
+            <img src="imgs/assets/perge_ruins.JPG" alt="Ancient City Ruins thumbnail"/>
+            <div class="item-desc">
+              <div class = "project-col"> ANCIENT RUINS FRAGMENT</div> 
+              <div class = "project-col"> ANTALYA (PERGE), TÜRKIYE </div> 
+            </div>
+        </a>
+        <!-- Spice Stand -->
+        <a href="https://www.dropbox.com/sh/dgoxttprtmbcpwx/AAAZTLCMw1WbaLhs9EsXp7RJa?dl=0" target="_blank">
+          <img src="imgs/assets/spice_stand.JPG" alt="Spice Stand thumbnail"/>
+          <div class="item-desc">
+            <div class = "project-col"> SPICE STAND </div> 
+            <div class = "project-col"> ISTANBUL (GRAND BAZAAR), TÜRKIYE </div> 
+          </div>
+        </a>
+      </div>
     </div>
     <br>
     <br>
@@ -94,81 +92,68 @@
     <br>
     <br>
     <a href="imgs/assets/berlin_graffiti.jpeg" download = "berlin360">
-    <p class = "work-txt"> 360° IMAGE TEXTURES </p> 
-    <div class = "project-container">
-      <!-- Berlin Graffiti -->
-      <a href="imgs/assets/berlin_graffiti.jpeg" target="_blank">
-        <div class = "work">
-          <img class="work-img" src="imgs/assets/berlin_graffiti.jpeg" alt="360 image of Berlin graffiti"/>
-          <p class = "work-txt"> BERLIN (GRAFFITI) </p> 
-          <p class = "work-subtxt"> 52°30'29.328"N 13°27'5.04"E</p> 
-        </div>
-      </a>
-      <!-- Cappadocia Love Valley Sunset -->
-      <a href="imgs/assets/cappadocia.jpeg" target="_blank">
-        <div class = "work">
-          <img class="work-img" src="imgs/assets/cappadocia.jpeg" alt="360 image of Cappadocia"/>
-          <p class = "work-txt"> CAPPADOCIA </p> 
-          <p class = "work-subtxt"> 38°39'24.798"N 34°50'34.89"E</p> 
-        </div>
-      </a>
-    </div>
-
-    <div class = "project-container">
-      <!-- Perge Amphitheater -->
-      <a href="imgs/assets/perge_theatre.jpeg" target="_blank">
-        <div class = "work">
-          <img class="work-img" src="imgs/assets/perge_theatre.jpeg" alt="360 image of Perge amphitheater"/>
-          <p class = "work-txt"> PERGE (AMPHITHEATER) </p> 
-          <p class = "work-subtxt"> 36°57'27.792"N 30°51'1.662"E</p> 
-        </div>
-      </a>
-      <!-- Goreme Cave -->
-      <a href="imgs/assets/goreme_cave.jpeg" target="_blank">
-        <div class = "work">
-          <img class="work-img" src="imgs/assets/goreme_cave.jpeg" alt="360 image of Goreme Cave"/>
-          <p class = "work-txt"> GOREME (CAVE) </p> 
-          <p class = "work-subtxt"> 38°38'18.078"N 34°50'43.47"E</p> 
-        </div>
-      </a>
-    </div>
-
-    <div class = "project-container">
-      <!-- Antalya Street -->
-      <a href="imgs/assets/antalya_street.jpeg" target="_blank">
-        <div class = "work">
-          <img class="work-img" src="imgs/assets/antalya_street.jpeg" alt="360 image of Antalya street"/>
-          <p class = "work-txt"> ANTALYA (STREET) </p> 
-          <p class = "work-subtxt"> 36°52'54.582"N 30°42'17.478"E</p> 
-        </div>
-      </a>
-      <!-- Chicago Alley -->
-      <a href="imgs/assets/chicago_alley.jpeg" target="_blank">
-        <div class = "work">
-          <img class="work-img" src="imgs/assets/chicago_alley.jpeg" alt="360 image of Chicago alley"/>
-          <p class = "work-txt"> CHICAGO (ALLEY) </p> 
-          <p class = "work-subtxt"> 41°52'58.608"N 87°37'30.342"W</p> 
-        </div>
-      </a>
-    </div>
-
-    <div class = "project-container">
-      <!-- Porto Moniz Natural Pool -->
-      <a href="imgs/assets/porto_moniz.jpeg" target="_blank">
-        <div class = "work">
-          <img class="work-img" src="imgs/assets/porto_moniz.jpeg" alt="360 image of Porto Moniz"/>
-          <p class = "work-txt"> PORTO MONIZ </p> 
-          <p class = "work-subtxt"> 32°52'6.99"N 17°10'17.43"W</p> 
-        </div>
-      </a>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <!-- Contact footer -->
-    <div class="center-horizontal">
-      <p class = "p-name"> contact &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp kristinwu@uchicago.edu </p>
+    <div class = "project-grid">
+      <div class="grid-item">
+        <!-- Berlin Graffiti -->
+        <a href="imgs/assets/berlin_graffiti.jpeg" target="_blank">
+          <img src="imgs/assets/berlin_graffiti.jpeg" alt="360 image of Berlin graffiti"/>
+          <div class="item-desc">
+            <div class = "project-col"> 360° BERLIN </div> 
+            <div class = "project-col"> 52°30'29.328"N 13°27'5.04"E </div> 
+          </div>
+        </a>
+        <!-- Porto Moniz Natural Pool -->
+        <a href="imgs/assets/porto_moniz.jpeg" target="_blank">
+          <img src="imgs/assets/porto_moniz.jpeg" alt="360 image of Porto Moniz"/>
+          <div class="item-desc">
+            <div class = "project-col"> 360° PORTO MONIZ</div> 
+            <div class = "project-col"> 32°52'6.99"N 17°10'17.43"W </div> 
+          </div>
+        </a>
+        <!-- Cappadocia Love Valley Sunset -->
+        <a href="imgs/assets/cappadocia.jpeg" target="_blank">
+          <img src="imgs/assets/cappadocia.jpeg" alt="360 image of Cappadocia"/>
+          <div class="item-desc">
+            <div class = "project-col"> 360° CAPPADOCIA</div> 
+            <div class = "project-col"> 38°39'24.798"N 34°50'34.89"E </div> 
+          </div>
+        </a>
+      </div>
+      <div class = "grid-item">
+        <!-- Perge Amphitheater -->
+        <a href="imgs/assets/perge_theatre.jpeg" target="_blank">
+          <img src="imgs/assets/perge_theatre.jpeg" alt="360 image of Perge amphitheater"/>
+          <div class="item-desc">
+            <div class = "project-col"> 360° PERGE</div> 
+            <div class = "project-col"> 36°57'27.792"N 30°51'1.662"E </div> 
+          </div>
+        </a>
+        <!-- Goreme Cave -->
+        <a href="imgs/assets/goreme_cave.jpeg" target="_blank">
+            <img src="imgs/assets/goreme_cave.jpeg" alt="360 image of Goreme Cave"/>
+            <div class="item-desc">
+              <div class = "project-col"> 360° GOREME</div> 
+              <div class = "project-col"> 38°38'18.078"N 34°50'43.47"E </div> 
+            </div>
+        </a>
+      </div>
+      <div class = "grid-item">
+        <!-- Antalya Street -->
+        <a href="imgs/assets/antalya_street.jpeg" target="_blank">
+          <img src="imgs/assets/antalya_street.jpeg" alt="360 image of Antalya street"/>
+          <div class="item-desc">
+            <div class = "project-col"> 360° ANTALYA</div> 
+            <div class = "project-col"> 36°52'54.582"N 30°42'17.478"E</div> 
+          </div>
+        </a>
+        <!-- Chicago Alley -->
+        <a href="imgs/assets/chicago_alley.jpeg" target="_blank">
+          <img src="imgs/assets/chicago_alley.jpeg" alt="360 image of Chicago alley"/>
+          <div class="item-desc">
+            <div class = "project-col"> 360° CHICAGO</div> 
+            <div class = "project-col"> 41°52'58.608"N 87°37'30.342"W</div> 
+          </div>
+        </a>
     </div>
   </body>
 </html>
