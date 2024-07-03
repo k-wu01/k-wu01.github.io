@@ -3,8 +3,137 @@ body {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11pt;
-    overflow: scroll;
 }
+
+.split {
+    height: 100%;
+    width: calc(50% - 20pt);
+    position: fixed;
+    overflow: hidden; 
+}
+
+.split img {
+    width: 100%;
+}
+
+.left {
+    padding-top: 10pt;
+    padding-left: 10pt;
+    overflow-y: scroll;
+}
+
+.name-desc-container {
+    font-family: "Archivo", sans-serif; 
+    text-align: center;
+}
+
+.name-desc {
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.name-desc-sub {
+    font-size: 10pt;
+    font-weight: 300;
+}
+
+.exp-edu-skills-container {
+    padding-top: 20pt;
+    font-family: "Roboto", sans-serif;
+    font-size: 10pt;
+    line-height: 1.1;
+}
+
+.exp, .skills {
+    margin: 10pt;
+}
+
+span.exp-edu-skills-title {
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+span.exp-title {
+    font-weight: 600;
+}
+
+span.exp-role {
+    font-style: italic;
+}
+
+span.exp-sub, span.exp-sub-right {
+    font-size: 9pt;
+}
+
+.skills-group {
+    line-height: 1.1;
+    margin-bottom: 5pt;
+}
+
+.right{
+    right: 0; 
+    padding-top: 10pt;
+    padding-right: 10pt;
+    overflow-y: scroll;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.projs-installs{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-bottom: 10pt;
+}
+
+
+.proj-container{
+    padding: 10pt;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px; 
+    font-family: "Roboto", sans-serif;
+    font-size: 10pt;
+}
+
+span.proj-title{
+    font-weight: bold;
+}
+
+.proj-txt{
+    margin-top: 3pt;
+}
+
+.proj-desc{
+    margin: 1pt
+}
+.proj-skills{
+    padding: 3pt;
+    font-size: 9pt;
+}
+
+.proj-thumb a:hover{
+    opacity: 0.6; 
+}
+
+.proj-thumb img:hover + .proj-thumb-desc{
+    display: block;
+}
+.proj-thumb-desc{
+    display: none;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+
+
 
 .sticky-header {
     position: fixed;
